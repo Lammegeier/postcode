@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postcode Search</title>
+    <script src="postcodeScript.js" defer></script>
+</head>
+<body>
+    <h1>UK Postcode Search</h1>
+    <form onsubmit="event.preventDefault(); fetchPostcodeInfo();">
+        <label for="postcode">Enter Postcode:</label>
+        <input type="text" id="postcode" name="postcode" required>
+        <button type="submit">Search</button>
+    </form>
+    <div id="output"></div>
+</body>
+</html>
